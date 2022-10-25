@@ -12,12 +12,6 @@ html, body, td , tr {
     background-color: #101010;
 }
 
-dom_wrapper {
-    position: sticky;  /* Fix to the top */
-    top: 0;
-    padding: 5px;
-}
-
 </style>
 <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
@@ -27,7 +21,6 @@ dom_wrapper {
 $(document).ready(function () {
     var table = $('#example').DataTable(
         {
-            dom: '<"dom_wrapper fh-fixedHeader"Bf>tip',
             paging: false,
             fixedHeader: true,
             searching: true,
