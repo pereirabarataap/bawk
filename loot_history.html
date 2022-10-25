@@ -17,7 +17,20 @@
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
 <script type="text/javascript" class="init">
 $(document).ready(function () {
-  $('#example').DataTable({paging: false});
+    var table = $('#example').DataTable(
+        {paging: false}
+    );
+    
+    $('a.toggle-vis').on('click', function (e) {
+        e.preventDefault();
+ 
+        // Get the column API object
+        var column = table.column($(this).attr('data-column'));
+ 
+        // Toggle the visibility
+        column.visible(!column.visible());
+    });
+    
 });
 </script>
 
