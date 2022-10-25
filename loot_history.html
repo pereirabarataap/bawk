@@ -18,7 +18,10 @@
 
 <script type="text/javascript" class="init">
 $(document).ready(function () {
-    $('#example').DataTable({paging:false});
+    $('#example').DataTable({
+        paging:false,
+        fixedHeader: true
+    });
 });
 </script>
 
