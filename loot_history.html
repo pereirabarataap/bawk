@@ -18,11 +18,15 @@
 
 <script type="text/javascript" class="init">
 $(document).ready(function () {
-    $('#example').DataTable({
-        paging:false,
-        fixedHeader:true,
-        fixedFooter:true
-    });
+    $('#example').DataTable(
+        {
+            paging:false,
+            fixedHeader: {
+                header: true,
+                footer: true
+            },
+        }
+    );
 });
 </script>
 
