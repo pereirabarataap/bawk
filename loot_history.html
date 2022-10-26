@@ -32,6 +32,13 @@ $(document).ready(function () {
             fixedHeader: true,
             searching: true,
             scrollY: '85vh',
+            columnDefs: [
+                {
+                    target: 2,
+                    visible: false,
+                    searchable: true,
+                }
+            ],
         }
     );
 });
