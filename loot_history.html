@@ -26,6 +26,26 @@ th {
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
 
+function filterGlobal() {
+    $('#example')
+        .DataTable()
+        .search($('#global_filter').val(), $('#global_regex').prop('checked'), $('#global_smart').prop('checked'))
+        .draw();
+}
+ 
+function filterColumn(i) {
+    $('#example')
+        .DataTable()
+        .column(i)
+        .search(
+            $('#col' + i + '_filter').val(),
+            $('#col' + i + '_regex').prop('checked'),
+            $('#col' + i + '_smart').prop('checked')
+        )
+        .draw();
+}
+
+
 <script type="text/javascript" class="init">
 $(document).ready(function () {
     var table = $('#example').DataTable(
@@ -52,6 +72,15 @@ $(document).ready(function () {
             ],
         }
     );
+    
+    $('input.global_filter').on('keyup click', function () {
+        filterGlobal();
+    });
+ 
+    $('input.column_filter').on('keyup click', function () {
+        filterColumn($(this).parents('tr').attr('data-column'));
+    });
+    
 });
 </script>
 
