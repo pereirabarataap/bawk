@@ -1,69 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
+    <html>
+    <head>
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">	
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">	
 
-<style>
-    body, table, tbody, thead, td, tr {
-        color: #B3B3B3;
-        max-width: 99.999%;
-        vertical-align: middle;
-        background-color: #121212;
-        text-align:left;
-        font-size: 13px;
-        font-family: 'Helvetica', 'Arial', sans-serif;
-    }
+    <style>
+        body, table, tbody, thead, td, tr {
+            color: #B3B3B3;
+            max-width: 99.999%;
+            vertical-align: middle;
+            background-color: #121212;
+            text-align:left;
+            font-size: 13px;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
 
-    th {
-        font-size:13px;
-        font-weight:bold;
-    }
-</style>
+        th {
+            font-size:13px;
+            font-weight:bold;
+        }
+    </style>
 
-<script src="https://wow.zamimg.com/js/tooltips.js"></script>
-<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
-<script>
-    // wowhead links
-    const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};
-    
-    // table
-    $(document).ready(function () {
-        $('#example').DataTable(
-            {
-                paging: false,
-                fixedHeader: true,
-                scrollY: '85vh',
-                search:{
-                    smart:true,
-                    regex:true,
-                    caseInsensitive:true,
-                },
-                columnDefs: [
-                    {
-                        target: 0,
-                        visible: false,
-                        searchable: false,
+    <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
+    <script>
+        // wowhead links
+        const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};
+
+        // table
+        $(document).ready(function () {
+            $('#example').DataTable(
+                {
+                    paging: false,
+                    fixedHeader: true,
+                    scrollY: '85vh',
+                    search:{
+                        smart:true,
+                        regex:true,
+                        caseInsensitive:true,
                     },
-                    {
-                        target: 1,
-                        visible: false,
-                        searchable: true,
-                    }
-                ]
-            }
-        );
-    });
-</script>
+                    columnDefs: [
+                        {
+                            target: 0,
+                            visible: false,
+                            searchable: false,
+                        },
+                        {
+                            target: 1,
+                            visible: false,
+                            searchable: true,
+                        }
+                    ]
+                }
+            );
+        });
+    </script>
 
 
-</head>
-<body>
-<table id="example" class="table compact" width="100%">
-  <thead>
+    </head>
+    <body>
+    <table id="example" class="table compact" width="100%">
+      <thead>
     <tr>
       <th></th>
       <th>Class_text</th>
@@ -150,6 +150,22 @@
       <th>4</th>
       <td>Paladin</td>
       <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F48CBA'>Fideous</td>
+      <td style='font-weight:bold;color:#F48CBA'>5</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>2</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=44577'>Heroic Key to the Focusing Iris_</a></br><a href='https://www.wowhead.com/wotlk/item=39759'>Ablative Chitin Girdle_</a></br><a href='https://www.wowhead.com/wotlk/item=40625'>Breastplate of the Lost Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=40631'>Crown of the Lost Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=40297'>Sabatons of Endurance_</a></td>
+      <td></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=39767'>Undiminished Battleplate_</a></br><a href='https://www.wowhead.com/wotlk/item=39729'>Bracers of the Tyrant_</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Paladin</td>
+      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#F48CBA'>Hartvíg</td>
       <td style='font-weight:bold;color:#F48CBA'>4</td>
       <td style='font-weight:bold;color:#F48CBA'>4</td>
@@ -163,8 +179,8 @@
       <td></td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>Deathknight dk</td>
+      <th>6</th>
+      <td>Deathknight dk DK</td>
       <td><p style='position:relative;color:transparent;'>0<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/f/fd/Spell_deathknight_classicon.png alt='Deathknight' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#C41E3A'>Dräpknight</td>
       <td style='font-weight:bold;color:#C41E3A'>4</td>
@@ -176,22 +192,6 @@
       <td><a href='https://www.wowhead.com/wotlk/item=39767'>Undiminished Battleplate_</a></td>
       <td></td>
       <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Paladin</td>
-      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
-      <td style='font-weight:bold;color:#F48CBA'>Fideous</td>
-      <td style='font-weight:bold;color:#F48CBA'>4</td>
-      <td style='font-weight:bold;color:#F48CBA'>0</td>
-      <td style='font-weight:bold;color:#F48CBA'>0</td>
-      <td style='font-weight:bold;color:#F48CBA'>2</td>
-      <td style='font-weight:bold;color:#F48CBA'>0</td>
-      <td><a href='https://www.wowhead.com/wotlk/item=39759'>Ablative Chitin Girdle_</a></br><a href='https://www.wowhead.com/wotlk/item=40625'>Breastplate of the Lost Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=40631'>Crown of the Lost Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=40297'>Sabatons of Endurance_</a></td>
-      <td></td>
-      <td></td>
-      <td><a href='https://www.wowhead.com/wotlk/item=39767'>Undiminished Battleplate_</a></br><a href='https://www.wowhead.com/wotlk/item=39729'>Bracers of the Tyrant_</a></td>
       <td></td>
     </tr>
     <tr>
@@ -236,7 +236,7 @@
       <td style='font-weight:bold;color:#8788EE'>0</td>
       <td style='font-weight:bold;color:#8788EE'>0</td>
       <td style='font-weight:bold;color:#8788EE'>0</td>
-      <td><a href='https://www.wowhead.com/wotlk/item=40432'>Illustration of the Dragon Soul_</a></br><a href='https://www.wowhead.com/wotlk/item=40396'>The Turning Tide_</a></br><a href='https://www.wowhead.com/wotlk/item=44577'>Heroic Key to the Focusing Iris_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=44577'>Heroic Key to the Focusing Iris_</a></br><a href='https://www.wowhead.com/wotlk/item=40432'>Illustration of the Dragon Soul_</a></br><a href='https://www.wowhead.com/wotlk/item=40396'>The Turning Tide_</a></td>
       <td><a href='https://www.wowhead.com/wotlk/item=40408'>Haunting Call_</a></br><a href='https://www.wowhead.com/wotlk/item=40080'>Lost Jewel_</a></br><a href='https://www.wowhead.com/wotlk/item=40269'>Boots of Persuasion_</a></br><a href='https://www.wowhead.com/wotlk/item=40376'>Legwraps of the Defeated Dragon_</a></td>
       <td></td>
       <td></td>
@@ -531,6 +531,7 @@
       <td></td>
     </tr>
   </tbody>
-</table>
-</body>
-</html>
+    </table>
+    </body>
+    </html>
+    
