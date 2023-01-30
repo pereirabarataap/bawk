@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">	
+
+    <style>
+        body, table, tbody, thead, td, tr {
+            color: #B3B3B3;
+            max-width: 99.999%;
+            vertical-align: middle;
+            background-color: #121212;
+            text-align:left;
+            font-size: 13px;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+
+        th {
+            font-size:13px;
+            font-weight:bold;
+        }
+    </style>
+
+    <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
+    <script>
+        const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};
+
+        $(document).ready(function () {
+            $('#example').DataTable(
+                {
+                    paging: false,
+                    fixedHeader: true,
+                    scrollY: '85vh',
+                    search:{
+                        smart:true,
+                        regex:true,
+                        caseInsensitive:true,
+                    },
+                    columnDefs: [
+                        {
+                            target: 0,
+                            visible: false,
+                            searchable: false,
+                        },
+                        {
+                            target: 1,
+                            visible: false,
+                            searchable: true,
+                        }
+                    ]
+                }
+            );
+        });
+    </script>
+    </head>
+    <body>
+    <table id="example" class="table compact" width="100%">
+      <thead>
+    <tr>
+      <th></th>
+      <th>Class_text</th>
+      <th>Class</th>
+      <th>Player</th>
+      <th>Attendance %</th>
+      <th>#BIS</th>
+      <th>#BIS per raid</th>
+      <th>#Major</th>
+      <th>#Major per raid</th>
+      <th>#Minor</th>
+      <th>#Minor per raid</th>
+      <th>#OS</th>
+      <th>#OS per raid</th>
+      <th>#Misc</th>
+      <th>#Misc per raid</th>
+      <th>BIS</th>
+      <th>Major</th>
+      <th>Minor</th>
+      <th>OS</th>
+      <th>Misc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Warrior</td>
+      <td><p style='position:relative;color:transparent;'>9<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/8/83/Inv_sword_27.png alt='Warrior' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#C69B6D'>Aeinox</td>
+      <td style='font-weight:bold;color:#C69B6D'>92</td>
+      <td style='font-weight:bold;color:#C69B6D'>3</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.230769</td>
+      <td style='font-weight:bold;color:#C69B6D'>0</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.000000</td>
+      <td style='font-weight:bold;color:#C69B6D'>1</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.076923</td>
+      <td style='font-weight:bold;color:#C69B6D'>0</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.000000</td>
+      <td style='font-weight:bold;color:#C69B6D'>0</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45264'>Decimator's Armguards_</a></br><a href='https://www.wowhead.com/wotlk/item=45633'>Breastplate of the Wayward Protector_</a></br><a href='https://www.wowhead.com/wotlk/item=45138'>Drape of the Drakerider_</a></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45481'>Gauntlets of Ruthless Reprisal_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Paladin</td>
+      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F48CBA'>Brewtiful</td>
+      <td style='font-weight:bold;color:#F48CBA'>21</td>
+      <td style='font-weight:bold;color:#F48CBA'>3</td>
+      <td style='font-weight:bold;color:#F48CBA'>1.000000</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.000000</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.333333</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.000000</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45641'>Gauntlets of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45653'>Legplates of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45490'>Pandora's Plea_</a></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45436'>Libram of the Resolute_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Warrior</td>
+      <td><p style='position:relative;color:transparent;'>9<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/8/83/Inv_sword_27.png alt='Warrior' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#C69B6D'>Egret</td>
+      <td style='font-weight:bold;color:#C69B6D'>85</td>
+      <td style='font-weight:bold;color:#C69B6D'>2</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.166667</td>
+      <td style='font-weight:bold;color:#C69B6D'>3</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.250000</td>
+      <td style='font-weight:bold;color:#C69B6D'>1</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.083333</td>
+      <td style='font-weight:bold;color:#C69B6D'>0</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.000000</td>
+      <td style='font-weight:bold;color:#C69B6D'>0</td>
+      <td style='font-weight:bold;color:#C69B6D'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45633'>Breastplate of the Wayward Protector_</a></br><a href='https://www.wowhead.com/wotlk/item=45158'>Heart of Iron_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45228'>Handguards of the Enclave_</a></br><a href='https://www.wowhead.com/wotlk/item=45450'>Northern Barrier_</a></br><a href='https://www.wowhead.com/wotlk/item=45542'>Greaves of the Stonewarder_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45538'>Titanstone Pendant_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Deathknight dk DK</td>
+      <td><p style='position:relative;color:transparent;'>0<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/f/fd/Spell_deathknight_classicon.png alt='Deathknight' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#C41E3A'>Zwack</td>
+      <td style='font-weight:bold;color:#C41E3A'>35</td>
+      <td style='font-weight:bold;color:#C41E3A'>2</td>
+      <td style='font-weight:bold;color:#C41E3A'>0.400000</td>
+      <td style='font-weight:bold;color:#C41E3A'>2</td>
+      <td style='font-weight:bold;color:#C41E3A'>0.400000</td>
+      <td style='font-weight:bold;color:#C41E3A'>3</td>
+      <td style='font-weight:bold;color:#C41E3A'>0.600000</td>
+      <td style='font-weight:bold;color:#C41E3A'>1</td>
+      <td style='font-weight:bold;color:#C41E3A'>0.200000</td>
+      <td style='font-weight:bold;color:#C41E3A'>0</td>
+      <td style='font-weight:bold;color:#C41E3A'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45643'>Gauntlets of the Wayward Vanquisher_</a></br><a href='https://www.wowhead.com/wotlk/item=45640'>Crown of the Wayward Vanquisher_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45320'>Shoulderplates of the Eternal_</a></br><a href='https://www.wowhead.com/wotlk/item=45266'>Malice_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45107'>Iron Riveted War Helm_</a></br><a href='https://www.wowhead.com/wotlk/item=45250'>Crazed Construct Ring_</a></br><a href='https://www.wowhead.com/wotlk/item=45193'>Insurmountable Fervor_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45315'>Stonerender_</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Shaman</td>
+      <td><p style='position:relative;color:transparent;'>7<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d9/Inv_jewelry_talisman_04.png alt='Shaman' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#0070DD'>Mehuto</td>
+      <td style='font-weight:bold;color:#0070DD'>57</td>
+      <td style='font-weight:bold;color:#0070DD'>2</td>
+      <td style='font-weight:bold;color:#0070DD'>0.250000</td>
+      <td style='font-weight:bold;color:#0070DD'>1</td>
+      <td style='font-weight:bold;color:#0070DD'>0.125000</td>
+      <td style='font-weight:bold;color:#0070DD'>1</td>
+      <td style='font-weight:bold;color:#0070DD'>0.125000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.000000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45116'>Freya's Choker of Warding_</a></br><a href='https://www.wowhead.com/wotlk/item=45168'>Pyrelight Circle_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45239'>Runeshaper's Gloves_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45541'>Shroud of Alteration_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Warlock</td>
+      <td><p style='position:relative;color:transparent;'>8<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d2/Spell_nature_drowsy.png alt='Warlock' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#8788EE'>Prehzz</td>
+      <td style='font-weight:bold;color:#8788EE'>92</td>
+      <td style='font-weight:bold;color:#8788EE'>2</td>
+      <td style='font-weight:bold;color:#8788EE'>0.153846</td>
+      <td style='font-weight:bold;color:#8788EE'>1</td>
+      <td style='font-weight:bold;color:#8788EE'>0.076923</td>
+      <td style='font-weight:bold;color:#8788EE'>0</td>
+      <td style='font-weight:bold;color:#8788EE'>0.000000</td>
+      <td style='font-weight:bold;color:#8788EE'>0</td>
+      <td style='font-weight:bold;color:#8788EE'>0.000000</td>
+      <td style='font-weight:bold;color:#8788EE'>0</td>
+      <td style='font-weight:bold;color:#8788EE'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45653'>Legplates of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45511'>Scepter of Lost Souls_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45253'>Mantle of Wavering Calm_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Hunter</td>
+      <td><p style='position:relative;color:transparent;'>2<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/e/e7/Inv_weapon_bow_07.png alt='Hunter' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#AAD372'>Thiccledorf</td>
+      <td style='font-weight:bold;color:#AAD372'>50</td>
+      <td style='font-weight:bold;color:#AAD372'>2</td>
+      <td style='font-weight:bold;color:#AAD372'>0.285714</td>
+      <td style='font-weight:bold;color:#AAD372'>1</td>
+      <td style='font-weight:bold;color:#AAD372'>0.142857</td>
+      <td style='font-weight:bold;color:#AAD372'>0</td>
+      <td style='font-weight:bold;color:#AAD372'>0.000000</td>
+      <td style='font-weight:bold;color:#AAD372'>0</td>
+      <td style='font-weight:bold;color:#AAD372'>0.000000</td>
+      <td style='font-weight:bold;color:#AAD372'>0</td>
+      <td style='font-weight:bold;color:#AAD372'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45467'>Belt of the Betrayed_</a></br><a href='https://www.wowhead.com/wotlk/item=45143'>Saronite Mesh Legguards_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45327'>Siren's Cry_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Druid</td>
+      <td><p style='position:relative;color:transparent;'>1<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/c/c8/Inv_misc_monsterclaw_04.png alt='Druid' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#FF7C0A'>Gummybear</td>
+      <td style='font-weight:bold;color:#FF7C0A'>50</td>
+      <td style='font-weight:bold;color:#FF7C0A'>2</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.285714</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.000000</td>
+      <td style='font-weight:bold;color:#FF7C0A'>1</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.142857</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.000000</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45634'>Breastplate of the Wayward Vanquisher_</a></br><a href='https://www.wowhead.com/wotlk/item=45157'>Cindershard Ring_</a></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45106'>Strength of the Automaton_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Paladin</td>
+      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F48CBA'>Fideous</td>
+      <td style='font-weight:bold;color:#F48CBA'>100</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.071429</td>
+      <td style='font-weight:bold;color:#F48CBA'>3</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.214286</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.071429</td>
+      <td style='font-weight:bold;color:#F48CBA'>2</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.142857</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45638'>Crown of the Wayward Conqueror_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45112'>The Leviathan's Coil_</a></br><a href='https://www.wowhead.com/wotlk/item=45653'>Legplates of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45110'>Titanguard_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45228'>Handguards of the Enclave_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45510'>Libram of Discord_</a></br><a href='https://www.wowhead.com/wotlk/item=45193'>Insurmountable Fervor_</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Rogue</td>
+      <td><p style='position:relative;color:transparent;'>6<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/8/8e/Inv_throwingknife_04.png alt='Rogue' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#FFF468'>Ithiliel</td>
+      <td style='font-weight:bold;color:#FFF468'>100</td>
+      <td style='font-weight:bold;color:#FFF468'>1</td>
+      <td style='font-weight:bold;color:#FFF468'>0.071429</td>
+      <td style='font-weight:bold;color:#FFF468'>3</td>
+      <td style='font-weight:bold;color:#FFF468'>0.214286</td>
+      <td style='font-weight:bold;color:#FFF468'>0</td>
+      <td style='font-weight:bold;color:#FFF468'>0.000000</td>
+      <td style='font-weight:bold;color:#FFF468'>0</td>
+      <td style='font-weight:bold;color:#FFF468'>0.000000</td>
+      <td style='font-weight:bold;color:#FFF468'>0</td>
+      <td style='font-weight:bold;color:#FFF468'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45473'>Embrace of the Gladiator_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45489'>Insanity's Grip_</a></br><a href='https://www.wowhead.com/wotlk/item=45261'>Giant's Bane_</a></br><a href='https://www.wowhead.com/wotlk/item=45525'>Godbane Signet_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Druid</td>
+      <td><p style='position:relative;color:transparent;'>1<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/c/c8/Inv_misc_monsterclaw_04.png alt='Druid' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#FF7C0A'>Vafina</td>
+      <td style='font-weight:bold;color:#FF7C0A'>100</td>
+      <td style='font-weight:bold;color:#FF7C0A'>1</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.071429</td>
+      <td style='font-weight:bold;color:#FF7C0A'>2</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.142857</td>
+      <td style='font-weight:bold;color:#FF7C0A'>1</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.071429</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.000000</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45658'>Mantle of the Wayward Vanquisher_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=46110'>Alchemist's Cache_</a></br><a href='https://www.wowhead.com/wotlk/item=45483'>Boots of the Servant_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45441'>Sandals of the Ancient Keeper_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Druid</td>
+      <td><p style='position:relative;color:transparent;'>1<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/c/c8/Inv_misc_monsterclaw_04.png alt='Druid' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#FF7C0A'>Galima</td>
+      <td style='font-weight:bold;color:#FF7C0A'>50</td>
+      <td style='font-weight:bold;color:#FF7C0A'>1</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.142857</td>
+      <td style='font-weight:bold;color:#FF7C0A'>1</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.142857</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.000000</td>
+      <td style='font-weight:bold;color:#FF7C0A'>1</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.142857</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0</td>
+      <td style='font-weight:bold;color:#FF7C0A'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45640'>Crown of the Wayward Vanquisher_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45149'>Bracers of the Broodmother_</a></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45270'>Idol of the Crying Wind_</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Priest</td>
+      <td><p style='position:relative;color:transparent;'>5<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/3/3c/Inv_staff_30.png alt='Priest' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F3F3F3'>Penance</td>
+      <td style='font-weight:bold;color:#F3F3F3'>71</td>
+      <td style='font-weight:bold;color:#F3F3F3'>1</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.100000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>1</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.100000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.000000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.000000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45641'>Gauntlets of the Wayward Conqueror_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45258'>Sandals of Rash Temperament_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Mage</td>
+      <td><p style='position:relative;color:transparent;'>3<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/a/ae/Inv_staff_13.png alt='Mage' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#3FC7EB'>Sesos</td>
+      <td style='font-weight:bold;color:#3FC7EB'>28</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.250000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.250000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.000000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.000000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45634'>Breastplate of the Wayward Vanquisher_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45441'>Sandals of the Ancient Keeper_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Mage</td>
+      <td><p style='position:relative;color:transparent;'>3<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/a/ae/Inv_staff_13.png alt='Mage' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#3FC7EB'>Wizbizkit</td>
+      <td style='font-weight:bold;color:#3FC7EB'>42</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.166667</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.166667</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.000000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.000000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45658'>Mantle of the Wayward Vanquisher_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45258'>Sandals of Rash Temperament_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Shaman</td>
+      <td><p style='position:relative;color:transparent;'>7<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d9/Inv_jewelry_talisman_04.png alt='Shaman' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#0070DD'>Grubs</td>
+      <td style='font-weight:bold;color:#0070DD'>28</td>
+      <td style='font-weight:bold;color:#0070DD'>1</td>
+      <td style='font-weight:bold;color:#0070DD'>0.250000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.000000</td>
+      <td style='font-weight:bold;color:#0070DD'>1</td>
+      <td style='font-weight:bold;color:#0070DD'>0.250000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.000000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45654'>Legplates of the Wayward Protector_</a></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45187'>Wristguards of the Firetender_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Paladin</td>
+      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F48CBA'>Zaqiz</td>
+      <td style='font-weight:bold;color:#F48CBA'>21</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.333333</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.000000</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.333333</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.000000</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45641'>Gauntlets of the Wayward Conqueror_</a></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45252'>Horologist's Wristguards_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Shaman</td>
+      <td><p style='position:relative;color:transparent;'>7<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d9/Inv_jewelry_talisman_04.png alt='Shaman' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#0070DD'>Swagnificent</td>
+      <td style='font-weight:bold;color:#0070DD'>14</td>
+      <td style='font-weight:bold;color:#0070DD'>1</td>
+      <td style='font-weight:bold;color:#0070DD'>0.500000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.000000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.000000</td>
+      <td style='font-weight:bold;color:#0070DD'>1</td>
+      <td style='font-weight:bold;color:#0070DD'>0.500000</td>
+      <td style='font-weight:bold;color:#0070DD'>0</td>
+      <td style='font-weight:bold;color:#0070DD'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45531'>Chestguard of the Fallen God_</a></td>
+      <td></td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45169'>Totem of the Dancing Flame_</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Priest</td>
+      <td><p style='position:relative;color:transparent;'>5<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/3/3c/Inv_staff_30.png alt='Priest' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F3F3F3'>Purepriest</td>
+      <td style='font-weight:bold;color:#F3F3F3'>92</td>
+      <td style='font-weight:bold;color:#F3F3F3'>1</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.076923</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.000000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.000000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.000000</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0</td>
+      <td style='font-weight:bold;color:#F3F3F3'>0.0</td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45638'>Crown of the Wayward Conqueror_</a></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Warlock</td>
+      <td><p style='position:relative;color:transparent;'>8<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d2/Spell_nature_drowsy.png alt='Warlock' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#8788EE'>Kabouterdot</td>
+      <td style='font-weight:bold;color:#8788EE'>21</td>
+      <td style='font-weight:bold;color:#8788EE'>0</td>
+      <td style='font-weight:bold;color:#8788EE'>0.000000</td>
+      <td style='font-weight:bold;color:#8788EE'>2</td>
+      <td style='font-weight:bold;color:#8788EE'>0.666667</td>
+      <td style='font-weight:bold;color:#8788EE'>2</td>
+      <td style='font-weight:bold;color:#8788EE'>0.666667</td>
+      <td style='font-weight:bold;color:#8788EE'>0</td>
+      <td style='font-weight:bold;color:#8788EE'>0.000000</td>
+      <td style='font-weight:bold;color:#8788EE'>0</td>
+      <td style='font-weight:bold;color:#8788EE'>0.0</td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45186'>Soot-Covered Mantle_</a></br><a href='https://www.wowhead.com/wotlk/item=45508'>Belt of the Darkspeaker_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45273'>Handwraps of Plentiful Recovery_</a></br><a href='https://www.wowhead.com/wotlk/item=45236'>Unblinking Eye_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Rogue</td>
+      <td><p style='position:relative;color:transparent;'>6<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/8/8e/Inv_throwingknife_04.png alt='Rogue' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#FFF468'>MÃµss</td>
+      <td style='font-weight:bold;color:#FFF468'>92</td>
+      <td style='font-weight:bold;color:#FFF468'>0</td>
+      <td style='font-weight:bold;color:#FFF468'>0.000000</td>
+      <td style='font-weight:bold;color:#FFF468'>2</td>
+      <td style='font-weight:bold;color:#FFF468'>0.153846</td>
+      <td style='font-weight:bold;color:#FFF468'>1</td>
+      <td style='font-weight:bold;color:#FFF468'>0.076923</td>
+      <td style='font-weight:bold;color:#FFF468'>0</td>
+      <td style='font-weight:bold;color:#FFF468'>0.000000</td>
+      <td style='font-weight:bold;color:#FFF468'>0</td>
+      <td style='font-weight:bold;color:#FFF468'>0.0</td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45246'>Golem-Shard Sticker_</a></br><a href='https://www.wowhead.com/wotlk/item=45141'>Proto-hide Leggings_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45453'>Winter's Icy Embrace_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Mage</td>
+      <td><p style='position:relative;color:transparent;'>3<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/a/ae/Inv_staff_13.png alt='Mage' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#3FC7EB'>Gizbo</td>
+      <td style='font-weight:bold;color:#3FC7EB'>100</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.000000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.071429</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.071429</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.000000</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0.0</td>
+      <td></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45115'>Leviathan Fueling Manual_</a></td>
+      <td><a href='https://www.wowhead.com/wotlk/item=45100'>Pattern: Belt of Arctic Life_</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+    </table>
+    </body>
+    </html>
+    
