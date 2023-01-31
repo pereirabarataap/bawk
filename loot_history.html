@@ -1,65 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
+    <html>
+    <head>
 
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">	
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">	
 
-<style>
-    body, table, tbody, thead, td, tr {
-        color: #B3B3B3;
-        max-width: 99.999%;
-        vertical-align: middle;
-        background-color: #121212;
-        text-align:left;
-        font-size: 13px;
-        font-family: 'Helvetica', 'Arial', sans-serif;
-    }
+    <style>
+        body, table, tbody, thead, td, tr {
+            color: #B3B3B3;
+            max-width: 99.999%;
+            vertical-align: middle;
+            background-color: #121212;
+            text-align:left;
+            font-size: 13px;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
 
-    th {
-        font-size:13px;
-        font-weight:bold;
-    }
-</style>
+        th {
+            font-size:13px;
+            font-weight:bold;
+        }
+    </style>
 
-<script src="https://wow.zamimg.com/js/tooltips.js"></script>
-<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
-<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
-<script>
-    const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};
+    <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/fixedheader/3.2.4/js/dataTables.fixedHeader.min.js"></script>
+    <script>
+        const whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};
 
-    $(document).ready(function () {
-        $('#example').DataTable(
-            {
-                paging: false,
-                fixedHeader: true,
-                scrollY: '85vh',
-                search:{
-                    smart:true,
-                    regex:true,
-                    caseInsensitive:true,
-                },
-                columnDefs: [
-                    {
-                        target: 0,
-                        visible: false,
-                        searchable: false,
+        $(document).ready(function () {
+            $('#example').DataTable(
+                {
+                    paging: false,
+                    fixedHeader: true,
+                    scrollY: '85vh',
+                    search:{
+                        smart:true,
+                        regex:true,
+                        caseInsensitive:true,
                     },
-                    {
-                        target: 1,
-                        visible: false,
-                        searchable: true,
-                    }
-                ]
-            }
-        );
-    });
-</script>
-</head>
-<body>
-<table id="example" class="table compact" width="100%">
-  <thead>
+                    columnDefs: [
+                        {
+                            target: 0,
+                            visible: false,
+                            searchable: false,
+                        },
+                        {
+                            target: 1,
+                            visible: false,
+                            searchable: true,
+                        }
+                    ]
+                }
+            );
+        });
+    </script>
+    </head>
+    <body>
+    <table id="example" class="table compact" width="100%">
+      <thead>
     <tr>
       <th></th>
       <th>Class_text</th>
@@ -112,22 +112,6 @@
     </tr>
     <tr>
       <th>2</th>
-      <td>Paladin</td>
-      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
-      <td style='font-weight:bold;color:#F48CBA'>Fideous</td>
-      <td style='font-weight:bold;color:#F48CBA'>2</td>
-      <td style='font-weight:bold;color:#F48CBA'>3</td>
-      <td style='font-weight:bold;color:#F48CBA'>1</td>
-      <td style='font-weight:bold;color:#F48CBA'>2</td>
-      <td style='font-weight:bold;color:#F48CBA'>0</td>
-      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45638'>Crown of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45274'>Leggings of the Stoneweaver_</a></td>
-      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45112'>The Leviathan's Coil_</a></br><a href='https://www.wowhead.com/wotlk/item=45653'>Legplates of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45110'>Titanguard_</a></td>
-      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45228'>Handguards of the Enclave_</a></td>
-      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45510'>Libram of Discord_</a></br><a href='https://www.wowhead.com/wotlk/item=45193'>Insurmountable Fervor_</a></td>
-      <td style='font-weight:bold;color:#F48CBA'></td>
-    </tr>
-    <tr>
-      <th>3</th>
       <td>Warrior</td>
       <td><p style='position:relative;color:transparent;'>9<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/8/83/Inv_sword_27.png alt='Warrior' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#C69B6D'>Egret</td>
@@ -143,7 +127,7 @@
       <td style='font-weight:bold;color:#C69B6D'></td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>3</th>
       <td>Deathknight dk DK</td>
       <td><p style='position:relative;color:transparent;'>0<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/f/fd/Spell_deathknight_classicon.png alt='Deathknight' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#C41E3A'>Zwack</td>
@@ -159,7 +143,7 @@
       <td style='font-weight:bold;color:#C41E3A'></td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>4</th>
       <td>Shaman</td>
       <td><p style='position:relative;color:transparent;'>7<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d9/Inv_jewelry_talisman_04.png alt='Shaman' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#0070DD'>Mehuto</td>
@@ -175,7 +159,7 @@
       <td style='font-weight:bold;color:#0070DD'></td>
     </tr>
     <tr>
-      <th>6</th>
+      <th>5</th>
       <td>Warlock</td>
       <td><p style='position:relative;color:transparent;'>8<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/d/d2/Spell_nature_drowsy.png alt='Warlock' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#8788EE'>Prehzz</td>
@@ -191,7 +175,7 @@
       <td style='font-weight:bold;color:#8788EE'></td>
     </tr>
     <tr>
-      <th>7</th>
+      <th>6</th>
       <td>Hunter</td>
       <td><p style='position:relative;color:transparent;'>2<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/e/e7/Inv_weapon_bow_07.png alt='Hunter' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#AAD372'>Thiccledorf</td>
@@ -207,7 +191,7 @@
       <td style='font-weight:bold;color:#AAD372'></td>
     </tr>
     <tr>
-      <th>8</th>
+      <th>7</th>
       <td>Druid</td>
       <td><p style='position:relative;color:transparent;'>1<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/c/c8/Inv_misc_monsterclaw_04.png alt='Druid' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#FF7C0A'>Gummybear</td>
@@ -221,6 +205,22 @@
       <td style='font-weight:bold;color:#FF7C0A'><a href='https://www.wowhead.com/wotlk/item=45106'>Strength of the Automaton_</a></td>
       <td style='font-weight:bold;color:#FF7C0A'></td>
       <td style='font-weight:bold;color:#FF7C0A'></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Paladin</td>
+      <td><p style='position:relative;color:transparent;'>4<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/6/6c/Ability_thunderbolt.png alt='Paladin' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#F48CBA'>Fideous</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>3</td>
+      <td style='font-weight:bold;color:#F48CBA'>1</td>
+      <td style='font-weight:bold;color:#F48CBA'>2</td>
+      <td style='font-weight:bold;color:#F48CBA'>0</td>
+      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45638'>Crown of the Wayward Conqueror_</a></td>
+      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45112'>The Leviathan's Coil_</a></br><a href='https://www.wowhead.com/wotlk/item=45653'>Legplates of the Wayward Conqueror_</a></br><a href='https://www.wowhead.com/wotlk/item=45110'>Titanguard_</a></td>
+      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45228'>Handguards of the Enclave_</a></td>
+      <td style='font-weight:bold;color:#F48CBA'><a href='https://www.wowhead.com/wotlk/item=45510'>Libram of Discord_</a></br><a href='https://www.wowhead.com/wotlk/item=45193'>Insurmountable Fervor_</a></td>
+      <td style='font-weight:bold;color:#F48CBA'></td>
     </tr>
     <tr>
       <th>9</th>
@@ -256,22 +256,6 @@
     </tr>
     <tr>
       <th>11</th>
-      <td>Mage</td>
-      <td><p style='position:relative;color:transparent;'>3<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/a/ae/Inv_staff_13.png alt='Mage' width='32' height='32'></img></p></td>
-      <td style='font-weight:bold;color:#3FC7EB'>Wizbizkit</td>
-      <td style='font-weight:bold;color:#3FC7EB'>1</td>
-      <td style='font-weight:bold;color:#3FC7EB'>2</td>
-      <td style='font-weight:bold;color:#3FC7EB'>0</td>
-      <td style='font-weight:bold;color:#3FC7EB'>0</td>
-      <td style='font-weight:bold;color:#3FC7EB'>0</td>
-      <td style='font-weight:bold;color:#3FC7EB'><a href='https://www.wowhead.com/wotlk/item=45658'>Mantle of the Wayward Vanquisher_</a></td>
-      <td style='font-weight:bold;color:#3FC7EB'><a href='https://www.wowhead.com/wotlk/item=45258'>Sandals of Rash Temperament_</a></br><a href='https://www.wowhead.com/wotlk/item=45504'>Darkcore Leggings_</a></td>
-      <td style='font-weight:bold;color:#3FC7EB'></td>
-      <td style='font-weight:bold;color:#3FC7EB'></td>
-      <td style='font-weight:bold;color:#3FC7EB'></td>
-    </tr>
-    <tr>
-      <th>12</th>
       <td>Druid</td>
       <td><p style='position:relative;color:transparent;'>1<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/c/c8/Inv_misc_monsterclaw_04.png alt='Druid' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#FF7C0A'>Galima</td>
@@ -287,7 +271,7 @@
       <td style='font-weight:bold;color:#FF7C0A'></td>
     </tr>
     <tr>
-      <th>13</th>
+      <th>12</th>
       <td>Priest</td>
       <td><p style='position:relative;color:transparent;'>5<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/3/3c/Inv_staff_30.png alt='Priest' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#F3F3F3'>Penance</td>
@@ -303,7 +287,7 @@
       <td style='font-weight:bold;color:#F3F3F3'></td>
     </tr>
     <tr>
-      <th>14</th>
+      <th>13</th>
       <td>Mage</td>
       <td><p style='position:relative;color:transparent;'>3<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/a/ae/Inv_staff_13.png alt='Mage' width='32' height='32'></img></p></td>
       <td style='font-weight:bold;color:#3FC7EB'>Sesos</td>
@@ -314,6 +298,22 @@
       <td style='font-weight:bold;color:#3FC7EB'>0</td>
       <td style='font-weight:bold;color:#3FC7EB'><a href='https://www.wowhead.com/wotlk/item=45634'>Breastplate of the Wayward Vanquisher_</a></td>
       <td style='font-weight:bold;color:#3FC7EB'><a href='https://www.wowhead.com/wotlk/item=45441'>Sandals of the Ancient Keeper_</a></td>
+      <td style='font-weight:bold;color:#3FC7EB'></td>
+      <td style='font-weight:bold;color:#3FC7EB'></td>
+      <td style='font-weight:bold;color:#3FC7EB'></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Mage</td>
+      <td><p style='position:relative;color:transparent;'>3<img style='position:absolute;top:0;left:0;' src=https://static.wikia.nocookie.net/wowpedia/images/a/ae/Inv_staff_13.png alt='Mage' width='32' height='32'></img></p></td>
+      <td style='font-weight:bold;color:#3FC7EB'>Wizbizkit</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>1</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'>0</td>
+      <td style='font-weight:bold;color:#3FC7EB'><a href='https://www.wowhead.com/wotlk/item=45658'>Mantle of the Wayward Vanquisher_</a></td>
+      <td style='font-weight:bold;color:#3FC7EB'><a href='https://www.wowhead.com/wotlk/item=45258'>Sandals of Rash Temperament_</a></td>
       <td style='font-weight:bold;color:#3FC7EB'></td>
       <td style='font-weight:bold;color:#3FC7EB'></td>
       <td style='font-weight:bold;color:#3FC7EB'></td>
@@ -447,6 +447,7 @@
       <td style='font-weight:bold;color:#3FC7EB'></td>
     </tr>
   </tbody>
-</table>
-</body>
-</html>
+    </table>
+    </body>
+    </html>
+    
